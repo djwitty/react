@@ -2,10 +2,17 @@ import config from './config';
 //import fs from 'fs';
 import express from 'express';
 import apiRouter from './api';
+import sass from 'node-sass-middleware';
+import path from 'path';
+
 const server = express();
 //import config, { nodeEnv } from './config';
 //import https from 'https';
 //import http from 'http';
+server.use(sass({
+    src: path.join(__dirname, '/src/sass'),
+    dest: path.join(__dirname, 'public')
+}));
 
 server.set('view engine', 'ejs');
 
