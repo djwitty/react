@@ -15,12 +15,12 @@ module.exports = {
                     loader: 'babel-loader',
                 },
             },
-            /*{
+            {
                 test: /\.json$/,
                 use: {
                     loader: 'json-loader',
                 },
-            },*/
+            },
         ],
     },
 };

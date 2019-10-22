@@ -16,11 +16,17 @@ server.use(sass({
 
 server.set('view engine', 'ejs');
 
+import serverRender from './serverRender';
+
 server.get('/', (req, res) => {
     //res.send('Start Page');
-    res.render('index', {
-        content: 'Hello there, I am Mike, and here is <em>EJS</em> and <b>Express</b>'
-    });
+    serverRender()
+        .then(content => {
+            res.render('index', {
+                content
+            });
+        })
+        .catch(console.error);
 });
 
 server.use('/api', apiRouter);
@@ -32,8 +38,9 @@ server.use(express.static('public'));
     });
 });*/
 
-server.listen(config.port, () => {
+server.listen(config.port, config.host, () => {
     console.info('Express listening on port ', config.port);
+    console.info('It is working on', config.host);
 });
 
 //console.log(config, nodeEnv);

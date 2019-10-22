@@ -1,3 +1,6 @@
+.myHeaderClass, .myFooterClass {
+  text-align: center; }
+
 .ContestPreview {
   margin: 1em;
   border: 1px solid #ccc; }

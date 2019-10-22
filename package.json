@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/djwitty/react#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "json-loader": "^0.5.7",
