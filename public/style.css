@@ -11,3 +11,8 @@
     background-color: #eee; }
   .ContestPreview .contest-name {
     padding: 0.5em; }
+  .ContestPreview.link {
+    cursor: pointer; }
+  .ContestPreview.link:hover > .contest-name {
+    background-color: #000;
+    color: #fff; }

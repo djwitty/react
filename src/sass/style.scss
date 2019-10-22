@@ -13,4 +13,11 @@
   .contest-name {
     padding: 0.5em;
   }
+  &.link {
+    cursor: pointer;
+  }
+  &.link:hover > .contest-name {
+    background-color: #000;
+    color: #fff;
+  }
 }
