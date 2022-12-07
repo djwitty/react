@@ -20,7 +20,7 @@
   "homepage": "https://github.com/djwitty/react#readme",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongodb": "^3.3.3",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
